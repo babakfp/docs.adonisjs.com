@@ -14,7 +14,7 @@
   white-space: nowrap;
   background: var(--gray);
   padding: 0px 6px;
-  font-size: 1.5rem;
+  font-size: 15px;
 }
 
 .markdown .alert :not(pre) > code {
@@ -53,7 +53,7 @@
   color: var(--heading-color);
   font-size: var(--markdown-h1-size);
   font-weight: var(--bold-font-weight);
-  margin-bottom: 2rem;
+  margin-bottom: 20px;
 }
 
 .markdown h2 {
@@ -67,7 +67,7 @@
 }
 /** Required only when using Calibre */
 .markdown h2 code {
-  font-size: 2.6rem;
+  font-size: 26px;
 }
 
 .markdown h3 {
@@ -79,7 +79,7 @@
 }
 /** Required only when using Calibre */
 .markdown h3 code {
-  font-size: 2rem;
+  font-size: 20px;
 }
 
 .markdown h4 {
@@ -91,7 +91,7 @@
 }
 /** Required only when using Calibre */
 .markdown h4 code {
-  font-size: 1.6rem;
+  font-size: 16px;
 }
 
 .markdown p {
@@ -125,7 +125,7 @@
   left: 0;
   display: block;
   content: '\2022';
-  font-size: 2.2rem;
+  font-size: 22px;
   line-height: 1;
 }
 
@@ -163,7 +163,7 @@
   border: 0;
   color: var(--pre-header-color);
   cursor: pointer;
-  font-size: 1.4rem;
+  font-size: 14px;
   position: absolute;
   opacity: 0;
   top: 0;
@@ -203,7 +203,7 @@
   color: var(--pre-header-color);
   padding: 12px 8px;
   margin-right: 10px;
-  font-size: 1.4rem;
+  font-size: 14px;
   position: relative;
   font-weight: var(--bold-font-weight);
   font-family: var(--font-mono);
@@ -235,7 +235,7 @@
   border-bottom: 2px solid var(--pre-header-border-color);
   color: var(--pre-header-color);
   padding: 6px 30px;
-  font-size: 1.4rem;
+  font-size: 14px;
   position: relative;
   font-weight: var(--bold-font-weight);
   font-family: var(--font-mono);
@@ -245,7 +245,7 @@
 .markdown pre code {
   display: inline-block;
   min-width: 100%;
-  font-size: 1.4rem;
+  font-size: 14px;
 }
 
 .markdown pre .line {
@@ -299,7 +299,7 @@
   margin-left: 0;
   padding: 25px 30px;
   position: relative;
-  font-size: 2.2rem;
+  font-size: 22px;
   background: var(--gray);
   border-radius: var(--rounded-corners-size);
   width: 100%;
@@ -308,7 +308,7 @@
 .markdown blockquote::before {
   content: "\201C";
   color: var(--light-gray);
-  font-size: 8rem;
+  font-size: 80px;
   position: absolute;
   left: 10px;
   top: -40px;
@@ -372,7 +372,7 @@
   text-align: center;
   color: var(--mute-color);
   font-style: italic;
-  font-size: 1.6rem;
+  font-size: 16px;
   margin-top: 22px;
   position: relative;
   top: -32px;
@@ -439,7 +439,7 @@ FEATURES BLOCK
 }
 
 .features ul:first-child li {
-  margin-bottom: 1rem;
+  margin-bottom: 10px;
 }
 
 .features ul:last-child {
@@ -448,8 +448,8 @@ FEATURES BLOCK
 }
 
 .features ul:last-child li {
-  margin-bottom: 0.5rem;
-  padding-right: 2rem;
+  margin-bottom: 5px;
+  padding-right: 20px;
 }
 
 .features ul:last-child li:before {
@@ -497,7 +497,7 @@ FANCY Codeblock
 
 .fancy-codeblock span.title {
   position: absolute;
-  font-size: 1.4rem;
+  font-size: 14px;
   background: #434963;
   font-weight: 600;
   line-height: 1;
@@ -551,7 +551,7 @@ Author details for the coobook
   color: var(--mute-color);
   margin-left: 15px;
   font-weight: 500;
-  font-size: 1.8rem;
+  font-size: 18px;
 }
 
 .doc-meta img {

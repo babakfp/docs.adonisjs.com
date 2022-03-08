@@ -65,7 +65,7 @@ TOC BLOCK
 
 /** Required only when using Calibre */
 .toc code {
-  font-size: 1.2rem;
+  font-size: 12px;
 }
 
 @media (min-width: 1280px) {

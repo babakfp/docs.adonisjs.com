@@ -19,7 +19,7 @@
   --font-sans: 'Calibre';
   --font-mono: 'Jetbrains Mono', monospace;
 
-  --base-font-size: 1.9rem;
+  --base-font-size: 19px;
   --base-font-weight: 400;
   --bold-font-weight: 500;
   --mono-font-weight: 400;
@@ -30,24 +30,24 @@
   --toc-width: auto;
 
   --sidebar-shadow: 0 0 0 1px rgba(17, 1, 34, 0.06), 0 2px 5px 0 rgba(17, 1, 34, 0.06);
-  --sidebar-title-font-size: 2rem;
-  --sidebar-link-font-size: 1.7rem;
+  --sidebar-title-font-size: 20px;
+  --sidebar-link-font-size: 17px;
 
-  --toc-title-font-size: 1.8rem;
-  --toc-link-font-size: 1.5rem;
-  --alert-font-size: 1.8rem;
-  --features-font-size: 1.7rem;
+  --toc-title-font-size: 18px;
+  --toc-link-font-size: 15px;
+  --alert-font-size: 18px;
+  --features-font-size: 17px;
 
   --markdown-block-elements-margin: 40px;
   --markdown-paragraph-margin: 24px;
   --space-x: 32px;
 
   --markdown-content-width: 100%;
-  --markdown-font-size: 2rem;
-  --markdown-h1-size: 5rem;
-  --markdown-h2-size: 3.4rem;
-  --markdown-h3-size: 2.6rem;
-  --markdown-h4-size: 2.2rem;
+  --markdown-font-size: 20px;
+  --markdown-h1-size: 50px;
+  --markdown-h2-size: 34px;
+  --markdown-h3-size: 26px;
+  --markdown-h4-size: 22px;
 }
 
 /* Dark Mode */
