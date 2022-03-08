@@ -9,13 +9,11 @@
 @endsection
 
 @section('body')
-	{{--  TODO: Ask what `up-main` is  --}}
-	<div up-main>
-		@include('partials/sidebar')
+	@include('partials/sidebar')
 
-		<div id="document" up-main>
-			@include('partials/doc')
-			@include('partials/toc')
-		</div>
+	{{--  TODO: Ask what `up-main` is  --}}
+	<div id="document" up-main>
+		@include('partials/doc')
+		@include('partials/toc')
 	</div>
 @endsection
