@@ -34,25 +34,13 @@
 		<link rel="preload" href="{{ asset('assets/fonts/Calibre-Bold.woff2') }}" as="font" type="font/woff2" crossorigin />
 		<link rel="preload" href="{{ asset('assets/fonts/JetBrainsMono-Regular.woff2') }}" as="font" type="font/woff2" crossorigin />
 
+		{{--  Main styles  --}}
+		<link rel="stylesheet" href="/app.css">
+
 		@entryPointStyles('app')
 		@entryPointScripts('app')
 
 		<script async defer data-domain="adonisjs.com" src="https://analytics.adonisjs.com/js/index.js"></script>
-
-		{{--  TailwindCSS  --}}
-		{{--  TODO: Fix this  --}}
-		{{--  <script src="https://cdn.tailwindcss.com"></script>
-		<script>
-			tailwind.config = {
-				theme: {
-					extend: {
-						colors: {
-							clifford: '#da373d',
-						}
-					}
-				}
-			}
-		</script>  --}}
 	</head>
 	<body>
 		@include('partials/header')

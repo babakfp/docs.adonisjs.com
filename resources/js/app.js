@@ -10,13 +10,6 @@ import 'normalize.css'
 import 'unpoly/unpoly.css'
 import '../fonts/Calibre/stylesheet.css'
 import '../fonts/jetbrains/stylesheet.css'
-import '../css/variables.css'
-import '../css/app.css'
-import '../css/header.css'
-import '../css/sidebar.css'
-import '../css/toc.css'
-import '../css/markdown.css'
-import '../css/carbon-ads.css'
 
 up.feedback.config.navSelectors = ['[up-nav]']
 

@@ -1,3 +1,16 @@
+/* TODO: maybe not ignore public/app.css */
+
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+
+@import "files/carbon-ads.css";
+@import "files/header.css";
+@import "files/markdown.css";
+@import "files/sidebar.css";
+@import "files/toc.css";
+@import "files/variables.css";
+
 /*
 --------------------------------
 COMMON STYLES
