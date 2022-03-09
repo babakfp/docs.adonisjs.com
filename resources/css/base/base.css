@@ -4,4 +4,6 @@
 
 	body { @apply overflow-x-hidden }
 
+	a { @apply duration-150 decoration-gray-400 hover:underline }
+
 }
