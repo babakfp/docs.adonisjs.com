@@ -8,7 +8,7 @@
 		transition-property: color, text-decoration-color;
 	}
 
-	:not(pre) code { @apply bg-gray-200 bg-opacity-50 px-1 py-0.5;
+	:not(pre) > code { @apply bg-gray-200 bg-opacity-50 px-1 py-0.5;
 		font-size: .86em;
 	}
 
