@@ -7,9 +7,7 @@
 @import "./partials/_index.css";
 
 @import "./base/_index.css";
-@import "./files/header.css";
-@import "./files/markdown.css";
-@import "./files/variables.css";
+@import "./vars.css";
 
 /*
 --------------------------------

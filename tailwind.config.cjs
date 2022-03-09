@@ -39,7 +39,7 @@ module.exports = {
 				accent: {
 					DEFAULT: colorwithCssVar('--accent'),
 				},
-				pre: colorwithCssVar('--precode'),
+				pre: colorwithCssVar('--pre'),
 				code: 'var(--code)',
 			},
 			spacing: {

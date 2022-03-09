@@ -23,12 +23,12 @@ pre {
 
 	/*end Code */
 
-	h1, h2, h3, h4, h5, h6 { @apply font-semibold;
+	h1, h2, h3, h4, h5, h6 { @apply relative font-semibold;
 
 		&:hover a { @apply opacity-100 }
 
 		/* TODO: Add titel(Copy to clipboard) + the js code */
-		a { @apply -mr-2 -ml-6 pr-1 text-gray-300 opacity-0 decoration-transparent }
+		a { @apply absolute text-gray-300 opacity-0 decoration-transparent }
 
 		.icon:before { content: "#" }
 	}
@@ -107,14 +107,11 @@ pre {
 		background: #1a1d29;
 	}
 
-	.codegroup {
-		background: var(--pre-background);
-		border-radius: var(--rounded-corners-size);
-	}
+	.codegroup { @apply bg-pre rounded }
 
-	.codegroup-tabs { @apply relative flex px-2 border-b-2 border-white border-opacity-10;
+	.codegroup-tabs { @apply relative flex px-2 border-b border-white border-opacity-10;
 
-		a { @apply relative py-2.5 px-4 text-white text-sm font-medium text-opacity-40 font-mono decoration-transparent;
+		a { @apply relative py-2.5 pb-2 px-4 text-white text-sm font-medium text-opacity-40 font-mono decoration-transparent;
 			transition: left 0.3s ease;
 			&.active { @apply text-accent }
 		}
@@ -128,12 +125,7 @@ pre {
 		background: var(--accent);
 	}
 
-	pre {
-		background: var(--pre-background);
-		padding: 30px 30px;
-		margin: 0;
-		border-radius: var(--rounded-corners-size);
-	}
+	pre { @apply bg-pre m-0 p-8 rounded }
 
 	.codeblock-title { @apply font-mono;
 		border-bottom: 2px solid var(--pre-header-border-color);
@@ -145,11 +137,7 @@ pre {
 		text-decoration: none;
 	}
 
-	pre code {
-		display: inline-block;
-		min-width: 100%;
-		font-size: 14px;
-	}
+	pre code { @apply inline-block min-w-full text-sm }
 
 	pre .line {
 		min-height: 27px;
@@ -180,22 +168,12 @@ pre {
 		background: rgb(29 255 132 / 15%);
 	}
 
-	.alert {
-		padding: 25px 30px;
-		background: var(--gray);
-		border-radius: var(--rounded-corners-size);
-		margin-bottom: var(--markdown-block-elements-margin);
-		font-size: var(--alert-font-size);
-		position: relative;
-	}
+	.alert { @apply relative mb-10 py-6 px-8 bg-gray-200 rounded text-lg }
 
-	.alert > :last-child, blockquote > :last-child {
-		margin-bottom: 0;
-	}
+	.alert > :last-child,
+	blockquote > :last-child { @apply mb-0 }
 
-	.alert.alert-note {
-		border-top: 6px solid var(--brand);
-	}
+	.alert.alert-note { @apply border-t-4 border-brand }
 
 	blockquote {
 		border-left: 6px solid var(--light-gray);
@@ -386,9 +364,9 @@ pre {
 		margin-bottom: 20px;
 	}
 
-	.setup .codegroup {
+	/* .setup .codegroup {
 		margin: 0 -30px;
-	}
+	} */
 
 	/*
 	--------------------------------
