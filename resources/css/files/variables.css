@@ -1,4 +1,22 @@
 :root {
+	--brand: rgb(90 69 255);
+	--brand-faded: rgb(175 167 239);
+  --brand-mute: rgb(209 205 241);
+	--accent: rgb(2 226 255);
+
+	--gray-50: 250 250 250;
+  --gray-100: 245 245 245;
+  --gray-200: 229 229 229;
+  --gray-300: 212 212 212;
+  --gray-400: 163 163 163;
+  --gray-500: 115 115 115;
+  --gray-600: 82 82 82;
+  --gray-700: 64 64 64;
+  --gray-800: 38 38 38;
+  --gray-900: 23 23 23;
+}
+
+:root {
   --background-color: #f9f9f9;
   --brand-color: #5a45ff;
   --brand-faded-color: #afa7ef;
