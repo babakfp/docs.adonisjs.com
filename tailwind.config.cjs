@@ -19,6 +19,7 @@ module.exports = {
 			minHeight: theme => theme('spacing'),
 			maxHeight: theme => theme('spacing'),
 			colors: {
+				white: colorwithCssVar('--white'),
 				gray: {
 					50: colorwithCssVar('--gray-50'),
 					100: colorwithCssVar('--gray-100'),
