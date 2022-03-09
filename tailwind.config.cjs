@@ -13,6 +13,10 @@ module.exports = {
 	content: ['./resources/**/*.{edge,js}'],
   theme: {
     extend: {
+			maxWidth: theme => theme('spacing'),
+			minWidth: theme => theme('spacing'),
+			minHeight: theme => theme('spacing'),
+			maxHeight: theme => theme('spacing'),
 			colors: {
 				gray: {
 					50: colorwithCssVar('--gray-50'),
