@@ -11,11 +11,10 @@
 		a { @apply block -mx-8 px-8 py-2 font-medium text-sm text-gray-400 border-b border-gray-200 border-dashed;
 			&:hover, &.up-current { @apply text-gray-700 }
 		}
+
 		ul ul { @apply hidden;
-			a { @apply border-gray-200;
-				&::before { @apply inline-block text-gray-200 pr-2;
-					content: "\2022";
-				}
+			a::before { @apply inline-block text-gray-200 pr-2;
+				content: "\2022";
 			}
 		}
 
