@@ -12,7 +12,11 @@
 			&:hover, &.up-current { @apply text-gray-700 }
 		}
 		ul ul { @apply hidden;
-			a { @apply pl-12 border-gray-200 }
+			a { @apply border-gray-200;
+				&::before { @apply inline-block text-gray-200 pr-2;
+					content: "\2022";
+				}
+			}
 		}
 
 		:not(pre) code { @apply font-semibold }
