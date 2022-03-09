@@ -34,15 +34,19 @@ module.exports = {
 				},
 				brand: {
 					DEFAULT: colorwithCssVar('--brand'),
-					faded: colorwithCssVar('--brand-faded'),
 					mute: colorwithCssVar('--brand-mute'),
 				},
 				accent: {
 					DEFAULT: colorwithCssVar('--accent'),
 				},
+				pre: colorwithCssVar('--precode'),
+				code: 'var(--code)',
 			},
 			spacing: {
 				'header.height': 'var(--header-height)',
+			},
+			borderRadius: {
+				DEFAULT: '6px',
 			},
 			zIndex: { 
 				1: '1',
@@ -58,6 +62,13 @@ module.exports = {
 			fontSize: {
 				'2xs': ['0.625rem', { lineHeight: '1' }],
 			},
+			borderWidth: {
+				12: '12px',
+			},
+		},
+		fontFamily: {
+			calibre: 'Calibre',
+			mono: ['"Jetbrains Mono"', 'monospace'],
 		},
   },
   plugins: [

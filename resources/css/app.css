@@ -27,9 +27,7 @@ body {
 }
 
 body {
-	@apply text-gray-700;
-  background: var(--background-color);
-  font-family: var(--font-sans);
+	@apply bg-gray-50 text-gray-700 font-calibre;
   font-weight: var(--base-font-weight);
   line-height: 1.4;
   font-size: var(--base-font-size);
@@ -41,8 +39,7 @@ strong {
   font-weight: var(--bold-font-weight);
 }
 
-code {
-  font-family: var(--font-mono);
+code { @apply font-mono;
   -webkit-font-smoothing: auto;
 }
 
@@ -128,5 +125,5 @@ DOC CONTENT STYLES
 }
 
 .banner a {
-  color: var(--brand-color);
+  color: var(--brand);
 }
