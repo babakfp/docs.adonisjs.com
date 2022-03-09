@@ -1,4 +1,5 @@
 const colors = require('tailwindcss/colors')
+const directionUtilities = require('./resources/js/tailwind-utils/direction.cjs')
 
 const colorwithCssVar = value => {
 	return ({ opacityValue }) => {
@@ -41,5 +42,7 @@ module.exports = {
 			},
 		},
   },
-  plugins: [],
+  plugins: [
+		directionUtilities,
+	],
 }

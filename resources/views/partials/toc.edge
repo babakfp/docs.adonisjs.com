@@ -1,13 +1,16 @@
 @set('showNested', (doc.group === 'Database' && doc.zone === 'Reference') || file.options.tocDepth >= 3)
 
-<aside class="toc scrollbar {{ showNested ? 'show_nested' : '' }}">
-  @if(file.toc)
-		<h3>On this page</h3>
-		<nav>
-			<ul x-data="tocMenu">
-				@dimerTree(file.toc.children)~
-			</ul>
-		</nav>
-  @end
-  @include('partials/carbon-ads')
+<aside class="toc scrollbar dir-rtl {{ showNested ? 'show_nested' : '' }}">
+  <div class="dir-ltr">
+		@if(file.toc)
+			<h3>On this page</h3>
+			<nav>
+				<ul x-data="tocMenu">
+					@dimerTree(file.toc.children)~
+				</ul>
+			</nav>
+		@endif
+
+		@include('partials/carbon-ads')
+	</div>
 </aside>
