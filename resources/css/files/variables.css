@@ -47,7 +47,6 @@
   --rounded-corners-size: 4px;
   --toc-width: auto;
 
-  --sidebar-shadow: 0 0 0 1px rgba(17, 1, 34, 0.06), 0 2px 5px 0 rgba(17, 1, 34, 0.06);
   --sidebar-title-font-size: 20px;
   --sidebar-link-font-size: 17px;
 
@@ -88,8 +87,6 @@
 		--sidebar-background: var(--background-color);
 		--pre-header-border-color: rgb(64 64 95 / 50%);
 		--pre-header-color: rgb(179 179 208 / 75%);
-	
-		--sidebar-shadow: none;
 	}
 
 	/* --- */

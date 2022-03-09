@@ -5,7 +5,6 @@ SIDEBAR STYLES
 */
 .sidebar {
   background: var(--sidebar-background);
-  box-shadow: var(--sidebar-shadow);
   position: fixed;
   top: 0;
   left: 0;
