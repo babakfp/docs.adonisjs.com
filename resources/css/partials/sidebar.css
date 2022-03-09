@@ -12,7 +12,7 @@
 		li { @apply mb-1 }
 		/* TODO: Maybe remove underline on hover */
 		a { @apply block py-0.5 px-2.5 border-2 border-transparent rounded text-base font-medium text-gray-500;
-			&:hover { color: inherit; }
+			&:hover { color: inherit }
 			&.up-current { @apply inline-block text-brand border-accent decoration-transparent }
 		}
 	}
