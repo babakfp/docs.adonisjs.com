@@ -41,6 +41,9 @@ module.exports = {
 					DEFAULT: colorwithCssVar('--accent'),
 				},
 			},
+			spacing: {
+				'header.height': 'var(--header-height)',
+			},
 			zIndex: { 
 				1: '1',
 				2: '2',

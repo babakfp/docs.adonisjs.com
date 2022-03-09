@@ -1,8 +1,8 @@
 :root {
-	--brand: rgb(90 69 255);
-	--brand-faded: rgb(175 167 239);
-  --brand-mute: rgb(209 205 241);
-	--accent: rgb(2 226 255);
+	--brand: 90 69 255;
+	--brand-faded: 175 167 239;
+  --brand-mute: 209 205 241;
+	--accent: 2 226 255;
 
 	--white: 255 255 255;
 
@@ -16,6 +16,8 @@
   --gray-700: 64 64 64;
   --gray-800: 38 38 38;
   --gray-900: 23 23 23;
+
+  --header-height: 56px;
 }
 
 :root {
@@ -23,7 +25,6 @@
   --brand-color: #5a45ff;
   --brand-faded-color: #afa7ef;
   --accent-color: rgba(2, 226, 255, 1);
-  --text-color: #202223;
   --heading-color: #151515;
   --mute-color: #6d7175;
   --gray: #e8e8e8;
@@ -43,14 +44,9 @@
   --base-font-weight: 400;
   --bold-font-weight: 500;
   --mono-font-weight: 400;
-
-  --header-height: 56px;
   --sidebar-width: 300px;
-  --rounded-corners-size: 4px;
+	--rounded-corners-size: 4px;
   --toc-width: auto;
-
-  --sidebar-title-font-size: 20px;
-  --sidebar-link-font-size: 17px;
 
   --toc-title-font-size: 18px;
   --toc-link-font-size: 15px;
@@ -77,7 +73,6 @@
 		--background-color: rgb(38 38 38);
 		--brand-color: rgb(80 63 212);
 		--accent-color: rgb(6 208 234);
-		--text-color: rgb(212 212 212);
 		--heading-color: rgb(229 229 229);
 		--mute-color: rgb(163 163 163);
 		--gray: rgb(64 64 64);
