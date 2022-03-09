@@ -4,7 +4,9 @@
 
 	body { @apply overflow-x-hidden }
 
-	a { @apply duration-150 decoration-gray-400 hover:underline }
+	a { @apply duration-150 underline decoration-transparent hover:decoration-gray-400;
+		transition-property: color, text-decoration-color;
+	}
 
 	:not(pre) code { @apply bg-gray-200 bg-opacity-50 px-1 py-0.5;
 		font-size: .86em;
