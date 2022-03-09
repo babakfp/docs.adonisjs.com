@@ -55,6 +55,9 @@ module.exports = {
 				8: '8',
 				9: '9',
 			},
+			fontSize: {
+				'2xs': ['0.625rem', { lineHeight: '1' }],
+			},
 		},
   },
   plugins: [

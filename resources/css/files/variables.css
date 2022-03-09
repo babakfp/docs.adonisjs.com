@@ -67,7 +67,7 @@
 
 /* Dark Mode */
 
-@media (prefers-color-scheme: dark) {
+@media (prefers-color-scheme: none) {
 
   :root {
 		--background-color: rgb(38 38 38);
