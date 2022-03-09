@@ -1,75 +1,20 @@
-/*
---------------------------------
-TOC BLOCK
---------------------------------
-*/
-
 .toc {
-  display: none;
-  position: fixed;
-  right: 0;
-  padding: 0 20px 0 30px;
-  top: var(--header-height);
-  bottom: 0;
+	@apply hidden fixed right-0 bottom-0 py-10 px-8 border-l border-gray-200 xl:block;
   width: var(--toc-width);
-  overflow-y: auto;
-  border-left: 1px solid var(--lighter-gray);
-}
+  top: var(--header-height);
 
-.toc-container {
-  margin: 40px 0;
-}
+	h3 { @apply uppercase text-lg font-medium }
 
-.toc h3 {
-  font-size: var(--toc-title-font-size);
-  font-weight: var(--bold-font-weight);
-  text-transform: uppercase;
-}
+	nav {
+		@apply mt-4;
 
-.toc nav > ul > li {
-  padding-top: 5px;
-  padding-bottom: 5px;
-  border-bottom: 1px dashed #d1d5db;
-}
+		a { @apply block -mx-8 px-8 py-2 font-medium text-sm text-gray-400 border-b border-gray-200 border-dashed;
+			&:hover, &.up-current { @apply text-gray-700 }
+		}
+		ul ul { @apply hidden ml-4 }
 
-.toc ul li ul {
-  margin-left: 10px;
-  margin-top: 5px;
-  display: none;
-}
+		:not(pre) code { @apply font-semibold }
+	}
 
-.toc.show_nested ul li ul {
-  display: block;
-}
-
-.toc ul {
-  list-style: none;
-  padding: 0;
-}
-
-.toc li,
-.toc ul,
-.toc p {
-  margin: 0;
-}
-
-.toc li a {
-  font-size: var(--toc-link-font-size);
-  color: var(--light-gray);
-  text-decoration: none;
-}
-
-.toc li a:hover, .toc li a.up-current {
-  color: inherit;
-}
-
-/** Required only when using Calibre */
-.toc code {
-  font-size: 12px;
-}
-
-@media (min-width: 1280px) {
-  .toc {
-    display: block;
-  }
+	&.show_nested ul ul { @apply block }
 }
