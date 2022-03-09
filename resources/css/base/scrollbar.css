@@ -1,0 +1,16 @@
+@layer base {
+
+	::-webkit-scrollbar { @apply w-1.5 h-1.5;
+		&-thumb { @apply rounded-full bg-gray-300 bg-clip-padding;
+			border: 2px solid transparent;
+		}
+	}
+
+	body {
+		@apply scrollbar;
+		&::-webkit-scrollbar { @apply !w-2 !h-2;
+			&-thumb { @apply bg-gray-400 hover:bg-brand }
+		}
+	}
+
+}
