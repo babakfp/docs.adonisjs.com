@@ -16,4 +16,7 @@
 
 	img, video, code, pre { @apply rounded }
 
+	b,
+	strong { @apply !font-semibold }
+
 }
