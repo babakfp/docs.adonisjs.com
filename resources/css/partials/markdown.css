@@ -93,9 +93,8 @@ pre {
 	}
 
 	.ctc-action {
-		color: var(--pre-header-color);
 		cursor: pointer;
-		@apply absolute top-0 right-0 mt-2 mr-2 p-3 rounded text-sm opacity-0;
+		@apply absolute top-0 right-0 mt-2 mr-2 p-3 rounded text-sm text-white text-opacity-50 opacity-0;
 		transition: opacity 100ms ease-in-out, color 100ms ease-in-out;
 	}
 
@@ -127,9 +126,7 @@ pre {
 
 	pre { @apply bg-pre m-0 p-8 rounded }
 
-	.codeblock-title { @apply font-medium font-mono;
-		border-bottom: 2px solid var(--pre-header-border-color);
-		color: var(--pre-header-color);
+	.codeblock-title { @apply border-b-2 border-white border-opacity-10 text-white text-opacity-50 font-medium font-mono;
 		padding: 6px 30px;
 		font-size: 14px;
 		position: relative;

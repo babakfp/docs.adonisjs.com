@@ -25,9 +25,8 @@ body {
 }
 
 body {
-	@apply bg-gray-50 text-gray-700 font-calibre;
+	@apply text-lg bg-gray-50 text-gray-700 font-calibre;
   line-height: 1.4;
-  font-size: var(--base-font-size);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }

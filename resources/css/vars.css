@@ -19,13 +19,9 @@
   --gray-900: 23 23 23;
 
   --header-height: 56px;
-}
 
-:root {
-  --pre-header-border-color: #40405f;
-  --pre-header-color: #b3b3d0;
+	/*  */
 
-  --base-font-size: 19px;
   --sidebar-width: 300px;
   --toc-width: auto;
 
