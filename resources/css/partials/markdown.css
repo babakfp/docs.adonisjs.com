@@ -82,7 +82,7 @@ pre {
 		counter-increment: numbered-counter;
 	}
 
-	.dimer-highlight { @apply relative mb-10 }
+	.dimer-highlight { @apply relative mb-10 bg-pre rounded }
 
 	.fancy-codeblock .ctc-action {
 		margin-top: 33px;
