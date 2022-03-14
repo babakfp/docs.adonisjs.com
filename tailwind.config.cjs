@@ -44,6 +44,8 @@ module.exports = {
 			},
 			spacing: {
 				'header.height': 'var(--header-height)',
+				'toc.width': 'var(--toc-width)',
+				'sidebar.width': 'var(--sidebar-width)',
 			},
 			borderRadius: {
 				DEFAULT: '6px',

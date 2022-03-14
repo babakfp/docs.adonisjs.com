@@ -29,11 +29,7 @@ HEADER STYLES
 }
 
 /* SEARCH */
-.search-wrapper {
-	@apply border-l border-white border-opacity-20;
-  width: var(--toc-width);
-  padding: 0 var(--space-x) 0 10px;
-}
+.search-wrapper { @apply w-toc.width pr-8 pl-2.5 border-l border-white border-opacity-20 }
 
 .search-trigger {
   background: transparent;

@@ -1,7 +1,5 @@
 .toc {
-	@apply hidden fixed right-0 bottom-0 py-10 px-8 border-l border-gray-200 xl:block;
-  width: var(--toc-width);
-  top: var(--header-height);
+	@apply hidden fixed top-header.height right-0 bottom-0 w-toc.width py-10 px-8 border-l border-gray-200 xl:block;
 
 	h3 { @apply uppercase text-lg font-medium }
 

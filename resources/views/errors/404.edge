@@ -8,13 +8,13 @@
 @endsection
 
 @section('body')
-	<section class="banner">
-		<div>
-			<h1>404</h1>
+	<main class="flex items-center py-8 px-4 m-auto max-w-3xl text-center md:text-left" style="min-height: calc(100vh - var(--header-height))">
+		<div class="md:flex md:items-center">
+			<h1 class="m-0 mb-8 pb-8 border-b border-gray-200 text-7xl font-bold md:mb-0 md:mr-8 md:pb-0 md:pr-8 md:border-b-0 md:border-r">404</h1>
+			<div>
+				<h2 class="text-2xl font-medium">Page not found</h2>
+				<p class="mt-2">The page you are looking for does not exists. Visit the <a href="/">home page</a> or use the search to find relevant information.</p>
+			</div>
 		</div>
-		<div>
-			<h2> Page not found </h2>
-			<p>The page you are looking for does not exists. Visit the <a href="/">home page</a> or use the search to find relevant information.</p>
-		</div>
-	</section>
+	</main>
 @endsection
