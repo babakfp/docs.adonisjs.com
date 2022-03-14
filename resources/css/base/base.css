@@ -1,5 +1,5 @@
 @layer base {
-	
+
 	html { @apply scroll-smooth }
 
 	body { @apply overflow-x-hidden }
@@ -9,14 +9,12 @@
 	}
 
 	:not(pre) > code { @apply bg-code px-1 py-0.5;
-
 		/* Required only when using Calibre */
 		font-size: .86em;
 	}
 
 	img, video, code, pre { @apply rounded }
 
-	b,
-	strong { @apply !font-semibold }
+	b, strong { @apply !font-semibold }
 
 }
