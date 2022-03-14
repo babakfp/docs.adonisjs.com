@@ -133,11 +133,7 @@ pre {
 		text-decoration: none;
 	}
 
-	pre code { @apply inline-block min-w-full text-sm }
-
-	pre .line {
-		min-height: 27px;
-	}
+	pre code { @apply inline-block min-w-full text-base leading-6 }
 
 	pre .line.dim {
 		opacity: 0.3;
