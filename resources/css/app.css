@@ -26,7 +26,6 @@ body {
 
 body {
 	@apply bg-gray-50 text-gray-700 font-calibre;
-  font-weight: var(--base-font-weight);
   line-height: 1.4;
   font-size: var(--base-font-size);
   -webkit-font-smoothing: antialiased;
@@ -96,7 +95,7 @@ DOC CONTENT STYLES
 }
 
 .banner div:first-child {
-  border-right: 1px solid var(--lighter-gray);
+	@apply border-r border-gray-200;
   padding-right: 60px;
   margin-right: 60px;
 }

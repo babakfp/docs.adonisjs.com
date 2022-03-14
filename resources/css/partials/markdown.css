@@ -127,13 +127,12 @@ pre {
 
 	pre { @apply bg-pre m-0 p-8 rounded }
 
-	.codeblock-title { @apply font-mono;
+	.codeblock-title { @apply font-medium font-mono;
 		border-bottom: 2px solid var(--pre-header-border-color);
 		color: var(--pre-header-color);
 		padding: 6px 30px;
 		font-size: 14px;
 		position: relative;
-		font-weight: var(--bold-font-weight);
 		text-decoration: none;
 	}
 
@@ -176,22 +175,23 @@ pre {
 	.alert.alert-note { @apply border-t-4 border-brand }
 
 	blockquote {
-		border-left: 6px solid var(--light-gray);
+		@apply bg-gray-200 border-l-4 border-gray-400;
 		margin-left: 0;
 		padding: 25px 30px;
 		position: relative;
 		font-size: 22px;
-		background: var(--gray);
-		border-radius: var(--rounded-corners-size);
+		@apply bg-gray-200;
+		@apply rounded;
 		width: 100%;
 	}
 
 	blockquote::before {
+		@apply text-gray-400;
 		content: "\201C";
-		color: var(--light-gray);
 		font-size: 80px;
 		position: absolute;
 		left: 10px;
+		/* TODO: 0 */
 		top: -40px;
 	}
 
@@ -215,7 +215,7 @@ pre {
 	}
 
 	table th {
-		font-weight: var(--bold-font-weight);
+		@apply font-medium;
 	}
 
 	table th:not([align]) {
@@ -232,9 +232,9 @@ pre {
 
 	table td,
 	table th {
+		@apply border-b border-gray-200;
 		padding: 10px;
 		vertical-align: top;
-		border-bottom: 1px solid var(--lighter-gray);
 	}
 	
 	figure {
@@ -246,13 +246,13 @@ pre {
 	.embed {
 		margin: var(--markdown-block-elements-margin) 0;
 		position: relative;
-		border-radius: var(--rounded-corners-size);
-		background: var(--gray);
+		@apply rounded;
+		@apply bg-gray-200;
 	}
 
 	figure figcaption {
+		@apply text-gray-500;
 		text-align: center;
-		color: var(--mute-color);
 		font-style: italic;
 		font-size: 16px;
 		margin-top: 22px;
@@ -263,11 +263,11 @@ pre {
 	figure img {
 		display: block;
 		margin: auto;
-		border-radius: var(--rounded-corners-size);
+		@apply rounded;
 	}
 
 	hr {
-		border-color: var(--lighter-gray);
+		@apply border-gray-200;
 		border-top: 0;
 	}
 
@@ -276,9 +276,9 @@ pre {
 	}
 
 	details > summary {
+		@apply font-medium;
 		cursor: pointer;
 		margin: 20px 0;
-		font-weight: var(--bold-font-weight);
 	}
 
 	details > summary > * {
@@ -296,10 +296,10 @@ pre {
 	*/
 
 	.features {
+		@apply text-base;
 		display: flex;
 		justify-content: space-between;
 		margin-top: 30px;
-		font-size: var(--features-font-size);
 	}
 
 	.features ul {
@@ -346,7 +346,7 @@ pre {
 	}
 
 	.features ul:last-child a {
-		color: var(--mute-color);
+		@apply text-gray-500;
 		text-decoration: none;
 	}
 
@@ -428,8 +428,8 @@ pre {
 	}
 
 	.doc-meta p {
+		@apply text-gray-500;
 		margin: 0;
-		color: var(--mute-color);
 		margin-left: 15px;
 		font-weight: 500;
 		font-size: 18px;
@@ -443,13 +443,13 @@ pre {
 	}
 
 	.badge {
+		@apply text-base;
 		border-radius: 6px;
 		padding: 1px 8px 3px 8px;
-		font-size: var(--features-font-size);
 	}
 
 	.badge.badge-danger {
-		background: var(--danger-badge-color);
+		@apply bg-red-300;
 	}
 
 }

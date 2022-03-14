@@ -22,27 +22,12 @@
 }
 
 :root {
-  --mute-color: #6d7175;
-  --gray: #e8e8e8;
-  --light-gray: #8c929c;
-  --lighter-gray: #c9cccf;
-  --danger-badge-color: #FCC6C5;
-  --pre-background: #292d3e;
-  --brand-mute-color: #d1cdf1;
   --pre-header-border-color: #40405f;
   --pre-header-color: #b3b3d0;
 
   --base-font-size: 19px;
-  --base-font-weight: 400;
-  --bold-font-weight: 500;
-  --mono-font-weight: 400;
   --sidebar-width: 300px;
-	--rounded-corners-size: 4px;
   --toc-width: auto;
-
-  --toc-title-font-size: 18px;
-  --toc-link-font-size: 15px;
-  --features-font-size: 17px;
 
   --markdown-block-elements-margin: 40px;
   --space-x: 32px;
