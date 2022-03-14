@@ -8,11 +8,12 @@
 @endsection
 
 @section('body')
-	@include('partials/sidebar')
+	<div up-main>
+		@include('partials/sidebar')
 
-	{{--  TODO: Ask what `up-main` is  --}}
-	<div id="document" up-main>
-		@include('partials/doc')
-		@include('partials/toc')
+		<div id="document" up-main>
+			@include('partials/doc')
+			@include('partials/toc')
+		</div>
 	</div>
 @endsection
