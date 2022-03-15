@@ -3,10 +3,6 @@
 @set('title', '404 - Page not found')
 @set('description', 'Page not found. Visit https://docs.adonisjs.com')
 
-@section('meta')
-  <meta name="turbo-cache-control" content="no-cache">
-@endsection
-
 @section('body')
 	@!component('components/error-info', {
 		title: '404',
