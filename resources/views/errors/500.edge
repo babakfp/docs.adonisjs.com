@@ -7,8 +7,10 @@
 		title: '500',
 		subtitle: 'Something went wrong',
 	})
-		@if(app.inDev)
-			{{ inspect(error) }}
-		@endif
+		<div class="mt-4">
+			@if(app.inDev)
+				{{ inspect(error) }}
+			@endif
+		</div>
 	@endcomponent
 @endsection
