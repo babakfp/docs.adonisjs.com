@@ -1,0 +1,7 @@
+@layer utilities {
+
+	.link {
+		@apply decoration-gray-400 hover:text-brand hover:decoration-brand;
+	}
+
+}
