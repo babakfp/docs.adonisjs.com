@@ -1,4 +1,14 @@
-<p> It's a 500 </p>
-@if(app.inDev)
-  {{ inspect(error) }}
-@end
+@layout('layouts/main')
+
+@set('title', 'ERROR 500')
+
+@section('body')
+	@component('components/error-info', {
+		title: '500',
+		subtitle: 'Something went wrong',
+	})
+		@if(app.inDev)
+			{{ inspect(error) }}
+		@endif
+	@endcomponent
+@endsection
