@@ -6,6 +6,7 @@
 			@if(description)
 				<p class="mt-2">{{{ description }}}</p>
 			@endif
+			{{{ await $slots.main() }}}
 		</div>
 	</div>
 </main>
