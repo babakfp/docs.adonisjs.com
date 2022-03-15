@@ -95,12 +95,11 @@ HEADER STYLES
   }
 
   .header-nav li ul.dropdown {
+		@apply mt-header.height rounded-br rounded-bl;
     position: absolute;
     padding: 10px 0;
     top: -9px;
     z-index: 2;
-		@apply rounded-br rounded-bl;
-    margin-top: var(--header-height);
     background: #fff;
     left: 0;
     box-shadow: 0px 4px 16px rgb(46 41 51 / 8%), 0px 8px 24px rgb(71 63 79 / 16%);
