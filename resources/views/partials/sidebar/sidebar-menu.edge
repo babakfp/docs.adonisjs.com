@@ -6,7 +6,7 @@
           <nav>
             @if(category.name !== 'root')
               <h3> {{ category.name }} </h3>
-            @end
+            @endif
             <ol>
               @each(categoryDoc in category.docs)
                 <li>
@@ -21,11 +21,11 @@
                     {{ categoryDoc.title }}
                   </a>
                 </li>
-              @end
+              @endeach
             </ol>
           </nav>
-        @end
-      @end
-    @end
-  @end
-@end
+        @endeach
+      @endif
+    @endeach
+  @endif
+@endeach
