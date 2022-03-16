@@ -12,11 +12,6 @@ HEADER STYLES
 
 .primary-links { @apply flex items-center px-8 }
 
-/* LOGO STYLES */
-
-.logo-wrapper a,
-.logo-wrapper svg { @apply block }
-
 /* HEADER NAV  */
 .header-nav { @apply hidden }
 

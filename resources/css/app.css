@@ -35,18 +35,7 @@ code { @apply font-mono;
   -webkit-font-smoothing: auto;
 }
 
-.for-desktop {
-  display: none !important;
-}
 @media (min-width: 1024px) {
-  .for-desktop {
-    display: block !important;
-  }
-
-  .for-mobile {
-    display: none !important;
-  }
-
   :root {
     /*--markdown-content-width: 54ch;*/
     --markdown-content-width: 58ch;
