@@ -33,10 +33,7 @@ module.exports = {
 					800: colorwithCssVar('--gray-800'),
 					900: null,
 				},
-				brand: {
-					DEFAULT: colorwithCssVar('--brand'),
-					mute: colorwithCssVar('--brand-mute'),
-				},
+				brand: colorwithCssVar('--brand'),
 				accent: {
 					DEFAULT: colorwithCssVar('--accent'),
 				},

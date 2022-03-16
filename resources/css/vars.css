@@ -1,6 +1,5 @@
 :root {
 	--brand: 90 69 255;
-  --brand-mute: 209 205 241;
 	--accent: 2 226 255;
 	--pre: 41 45 62;
 	--code: rgb(41 45 62 / 10%);
@@ -24,11 +23,8 @@
 
 @media (prefers-color-scheme: dark) {
 	:root {
-		--brand: 90 69 255;
-		--brand-mute: 209 205 241;
-		--accent: 2 226 255;
-		--pre: 41 45 62;
-		--code: rgb(41 45 62 / 10%);
+		--brand: 78 59 220;
+		--accent: 3 193 218;
 
 		--white: 38 38 38;
 		--gray-50: 38 38 38;
