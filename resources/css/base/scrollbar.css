@@ -9,7 +9,7 @@
 	body {
 		@apply scrollbar;
 		&::-webkit-scrollbar { @apply !w-2 !h-2;
-			&-thumb { @apply bg-gray-400 hover:bg-brand }
+			&-thumb { @apply bg-gray-400 hover:bg-gray-500 }
 		}
 	}
 
