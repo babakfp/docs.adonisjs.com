@@ -11,8 +11,10 @@
 		}
 
 		ul ul { @apply hidden;
-			a::before { @apply inline-block text-gray-200 pr-2;
-				content: "\2022";
+			a { @apply pl-12;
+				&::before { @apply inline-block text-gray-200 pr-2;
+					content: "\2022";
+				}
 			}
 		}
 
