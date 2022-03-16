@@ -4,9 +4,7 @@
 	--accent: 2 226 255;
 	--pre: 41 45 62;
 	--code: rgb(41 45 62 / 10%);
-
 	--white: 255 255 255;
-
 	--gray-50: 250 250 250;
   --gray-100: 245 245 245;
   --gray-200: 229 229 229;
@@ -16,16 +14,31 @@
   --gray-600: 82 82 82;
   --gray-700: 64 64 64;
   --gray-800: 38 38 38;
-  --gray-900: 23 23 23;
 
-  --header-height: 56px;
-
-	/*  */
-
+	--header-height: 56px;
   --sidebar-width: 300px;
   --toc-width: auto;
-
   --markdown-block-elements-margin: 40px;
-
   --markdown-content-width: 100%;
+}
+
+@media (prefers-color-scheme: dark) {
+	:root {
+		--brand: 90 69 255;
+		--brand-mute: 209 205 241;
+		--accent: 2 226 255;
+		--pre: 41 45 62;
+		--code: rgb(41 45 62 / 10%);
+
+		--white: 38 38 38;
+		--gray-50: 38 38 38;
+		--gray-100: 64 64 64;
+		--gray-200: 82 82 82;
+		--gray-300: 115 115 115;
+		--gray-400: 163 163 163;
+		--gray-500: 212 212 212;
+		--gray-600: 229 229 229;
+		--gray-700: 245 245 245;
+		--gray-800: 250 250 250;
+	}
 }
