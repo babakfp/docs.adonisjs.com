@@ -28,7 +28,8 @@ pre {
 
 		&:hover a { @apply opacity-100 }
 		/* TODO: Add titel(Copy to clipboard) + the js code */
-		a { @apply absolute flex items-center justify-center w-6 -left-6 text-gray-300 opacity-0 no-underline;
+		a { @apply absolute flex items-center justify-center w-6 -left-6 pr-1.5 text-gray-300 opacity-0 no-underline;
+			font-size: .75em;
 			&::before { content: "#" }
 		}
 		span { @apply hidden }
