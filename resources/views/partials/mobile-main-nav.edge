@@ -1,4 +1,4 @@
-<div class="px-8 mb-8 text-sm font-medium lg:hidden" x-data="{ isOpen: false, title: document.getElementsByTagName('title')[0].innerHTML }" x-on:click.outside="isOpen = false">
+<div class="sticky top-0 mb-8 py-4 px-8 bg-white bg-opacity-50 backdrop-blur-md text-sm font-medium lg:hidden" x-data="{ isOpen: false, title: document.getElementsByTagName('title')[0].innerHTML }" x-on:click.outside="isOpen = false">
 	<div class="relative">
 		
 		<button class="flex items-center justify-between w-full h-10 pr-3 pl-4 bg-gray-100 rounded focus-visible:outline-none focus-visible:ring" x-on:click="isOpen = !isOpen">
@@ -24,10 +24,6 @@
 								@endeach
 							</div>
 						</div>
-						{{--  <a class="bg-white bg-opacity-20 relative block px-3 py-2 rounded" tabindex="-1" href="/react/menu">
-							<span>React</span>
-							<span class="sr-only">documentation for menu</span>
-						</a>  --}}
 					@else
 						<a class="relative block px-3 py-2 rounded !decoration-transparent hover:bg-gray-200" href="{{ groups[0].landingDoc.url }}" x-on:click="isOpen = false">
 							<span>{{ name }}</span>
