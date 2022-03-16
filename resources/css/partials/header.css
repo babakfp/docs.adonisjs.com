@@ -31,11 +31,11 @@
   .header-nav {
 		ul { @apply m-0 p-0 list-none }
 		li { @apply relative }
-		a { @apply flex items-center gap-1 h-9.5 px-3.5 whitespace-nowrap no-underline }
-		a.boxed { @apply justify-center w-9.5 p-0 }
-		> ul > li > a { @apply rounded text-white text-opacity-75 font-medium }
+		.item { @apply flex items-center gap-1 h-9.5 px-3.5 whitespace-nowrap no-underline }
+		.item.boxed { @apply justify-center w-9.5 p-0 }
+		> ul > li > .item { @apply rounded text-white text-opacity-75 font-medium }
 		ul ul { @apply min-w-56 }
-		ul ul a { @apply text-gray-600 hover:bg-gray-200 }
+		ul ul .item { @apply text-gray-600 hover:bg-gray-200 }
 
 		.icon-angle-down { @apply mt-0.5 opacity-50 }
 		li.expanded .icon-angle-down { @apply rotate-180 }
@@ -49,7 +49,7 @@
 		li.expanded ul.dropdown,
 		li:focus-within ul.dropdown { @apply opacity-100 pointer-events-auto }
 		
-		> ul > li > a.up-current, > ul > li.expanded > a, > ul > li > a:hover {
+		> ul > li > .item.up-current, > ul > li.expanded > .item, > ul > li > .item:hover {
 			@apply text-white bg-white bg-opacity-10;
 		}
 	}
