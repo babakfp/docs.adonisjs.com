@@ -1,11 +1,9 @@
 .toc {
 	@apply hidden fixed top-header.height right-0 bottom-0 w-toc.width py-10 px-8 border-l border-gray-200 xl:block;
 
-	h3 { @apply uppercase text-lg font-medium }
+	&.show_nested ul ul { @apply block }
 
 	nav {
-		@apply mt-4;
-
 		a { @apply block -mx-8 px-8 py-2 font-medium text-sm text-gray-400 border-b border-gray-200 border-dashed;
 			&:hover, &.up-current { @apply text-gray-700 }
 		}
@@ -20,6 +18,4 @@
 
 		:not(pre) > code { @apply font-semibold }
 	}
-
-	&.show_nested ul ul { @apply block }
 }

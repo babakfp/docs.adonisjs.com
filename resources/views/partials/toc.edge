@@ -3,7 +3,6 @@
 <aside class="toc scrollbar dir-rtl {{ showNested ? 'show_nested' : '' }}">
   <div class="dir-ltr">
 		@if(file.toc)
-			<h3>On this page</h3>
 			<nav>
 				<ul x-data="tocMenu">
 					@dimerTree(file.toc.children)~
