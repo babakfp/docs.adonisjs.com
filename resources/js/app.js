@@ -11,6 +11,7 @@ import 'unpoly/unpoly.css'
 import '../fonts/Calibre/stylesheet.css'
 import '../fonts/jetbrains/stylesheet.css'
 import '../css/variables.css'
+import '../css/dark-variables.css'
 import '../css/app.css'
 import '../css/header.css'
 import '../css/sidebar.css'
@@ -176,6 +177,38 @@ Alpine.data('tocMenu', function () {
           link.classList.add('up-current')
         }
       })
+    },
+  }
+})
+
+Alpine.data('darkModeSwitch', function () {
+  return {
+    mode: null,
+
+    toggleColorMode() {
+      this.mode = this.mode === 'dark' ? 'light' : 'dark'
+      localStorage.setItem('colorMode', this.mode)
+
+      if (this.mode === 'dark') {
+        document.documentElement.classList.add('dark')
+      } else {
+        document.documentElement.classList.remove('dark')
+      }
+    },
+
+    init() {
+      const selectedMode = localStorage.colorMode
+      if (selectedMode) {
+        this.mode = selectedMode === 'dark' ? 'dark' : 'light'
+        return
+      }
+
+      if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        this.mode = 'dark'
+        return
+      }
+
+      this.mode = 'light'
     },
   }
 })
