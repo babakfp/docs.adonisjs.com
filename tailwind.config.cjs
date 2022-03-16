@@ -41,6 +41,7 @@ module.exports = {
 				code: 'var(--code)',
 			},
 			spacing: {
+				9.5: '2.375rem',
 				'header.height': 'var(--header-height)',
 				'toc.width': 'var(--toc-width)',
 				'sidebar.width': 'var(--sidebar-width)',
