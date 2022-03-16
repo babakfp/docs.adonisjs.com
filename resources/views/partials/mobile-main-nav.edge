@@ -1,13 +1,13 @@
-<div class="sticky top-0 mb-8 py-4 px-8 bg-white bg-opacity-50 backdrop-blur-md text-sm font-medium lg:hidden" x-data="{ isOpen: false, title: document.getElementsByTagName('title')[0].innerHTML }">
+<div class="sticky top-0 mb-8 py-4 px-8 bg-white text-sm font-medium lg:hidden" x-data="{ isOpen: false, title: document.getElementsByTagName('title')[0].innerHTML }">
 	<div class="relative">
-		
+
 		<button class="flex items-center justify-between w-full h-10 pr-3 pl-4 bg-gray-100 rounded focus-visible:outline-none focus-visible:ring" x-on:click="isOpen = !isOpen" x-on:click.outside="isOpen = false">
 			<span class="text-sm font-medium" x-text="title"></span>
 			<svg class="w-4 h-4 text-gray-400" viewBox="0 0 20 20" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10 3a1 1 0 01.707.293l3 3a1 1 0 01-1.414 1.414L10 5.414 7.707 7.707a1 1 0 01-1.414-1.414l3-3A1 1 0 0110 3zm-3.707 9.293a1 1 0 011.414 0L10 14.586l2.293-2.293a1 1 0 011.414 1.414l-3 3a1 1 0 01-1.414 0l-3-3a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
 		</button>
 
 		<div class="absolute top-0 inset-x-0 w-full translate-y-11" x-show="isOpen">
-			<div class="w-full p-1 bg-gray-100 border border-white rounded bg-opacity-50 backdrop-blur-md border-opacity-10 drop-shadow-sm focus-visible:outline-none focus-visible:ring" tabindex="0">
+			<div class="w-full p-1 bg-gray-100 border border-white bg-opacity-50 backdrop-blur-md rounded border-opacity-10 drop-shadow-sm focus-visible:outline-none focus-visible:ring" tabindex="0">
 				@each((groups, name) in zones)
 					@if(groups.length > 1)
 						<div class="block">
