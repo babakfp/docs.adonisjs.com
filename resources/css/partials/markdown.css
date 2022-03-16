@@ -23,14 +23,15 @@ pre {
 
 	/*end Code */
 
-	h1, h2, h3, h4, h5, h6 { @apply relative font-semibold;
+	h1, h2, h3, h4, h5, h6 {
+		@apply relative font-semibold;
 
 		&:hover a { @apply opacity-100 }
-
 		/* TODO: Add titel(Copy to clipboard) + the js code */
-		a { @apply absolute text-gray-300 opacity-0 decoration-transparent }
-
-		.icon:before { content: "#" }
+		a { @apply absolute flex items-center justify-center w-6 -left-6 text-gray-300 opacity-0 no-underline;
+			&::before { content: "#" }
+		}
+		span { @apply hidden }
 	}
 
 	h1 { @apply text-6xl mb-5 }

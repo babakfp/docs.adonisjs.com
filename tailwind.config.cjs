@@ -19,6 +19,7 @@ module.exports = {
 			minHeight: theme => theme('spacing'),
 			maxHeight: theme => theme('spacing'),
 			colors: {
+				inherit: 'inherit',
 				white: colorwithCssVar('--white'),
 				gray: {
 					50: colorwithCssVar('--gray-50'),
@@ -30,7 +31,7 @@ module.exports = {
 					600: colorwithCssVar('--gray-600'),
 					700: colorwithCssVar('--gray-700'),
 					800: colorwithCssVar('--gray-800'),
-					900: colorwithCssVar('--gray-900'),
+					900: null,
 				},
 				brand: {
 					DEFAULT: colorwithCssVar('--brand'),
@@ -66,6 +67,10 @@ module.exports = {
 			},
 			borderWidth: {
 				12: '12px',
+			},
+			blur: {
+				px: '1px',
+				xs: '2px',
 			},
 		},
 		fontFamily: {

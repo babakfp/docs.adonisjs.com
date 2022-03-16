@@ -4,7 +4,7 @@
 
 	body { @apply overflow-x-hidden }
 
-	a { @apply duration-150 underline decoration-transparent hover:decoration-gray-400;
+	a { @apply duration-150 underline decoration-transparent hover:decoration-gray-500;
 		transition-property: color, text-decoration-color;
 	}
 

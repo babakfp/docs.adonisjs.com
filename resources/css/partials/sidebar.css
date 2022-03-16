@@ -22,7 +22,7 @@
   transition: transform 0.6s cubic-bezier(0.16, 1, 0.3, 1);
 }
 
-.sidenav-backdrop { @apply z-1 fixed inset-0 bg-gray-900 bg-opacity-75 invisible opacity-0 lg:hidden;
+.sidenav-backdrop { @apply z-1 fixed inset-0 bg-gray-800 backdrop-blur-xs bg-opacity-50 invisible opacity-0 lg:hidden;
   transition: opacity 0.6s ease, visibility 0s linear 0.4s;
 }
 
