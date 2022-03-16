@@ -47,5 +47,7 @@
 
 	.sidenav-backdrop { --gray-800: 38 38 38 }
 
+	.toc { @apply border-gray-100 }
+
 	.markdown { --gray-600: 212 212 212 }
 }
