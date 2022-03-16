@@ -1,15 +1,3 @@
-<a
-  href="#"
-  x-data
-  @click.prevent="$dispatch('toggle')"
-  title="Open Docs Menu"
-  aria-label="Open Docs Menu"
-  class="hamburger for-mobile"
->
-  <svg role="presentation" focusable="false" aria-label="Icon for open menu" xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
-    <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
-    <line x1="4" y1="6" x2="20" y2="6" />
-    <line x1="4" y1="12" x2="20" y2="12" />
-    <line x1="4" y1="18" x2="20" y2="18" />
-  </svg>
-</a>
+<button class="w-header.height h-header.height flex items-center justify-center -ml-8 opacity-75 duration-150 hover:opacity-100 lg:hidden" x-data @click.prevent="$dispatch('toggle')" title="Open Docs Menu" aria-label="Open Docs Menu">
+	<svg class="w-7 h-7" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-width="2" d="M5 6h14M5 12h14M5 18h14"/></svg>
+</button>

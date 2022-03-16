@@ -14,9 +14,6 @@ HEADER STYLES
 
 /* LOGO STYLES */
 
-.hamburger { @apply relative block mr-2 text-white }
-.hamburger svg { @apply block w-7 h-7 }
-
 .logo-wrapper a,
 .logo-wrapper svg { @apply block }
 
